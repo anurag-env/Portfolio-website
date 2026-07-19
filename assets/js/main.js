@@ -4,19 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-<section id="header" class="wrapper">
-
-    <nav id="nav">
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="resume.html">My Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-</section>
 
 (function($) {
 
