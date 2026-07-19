@@ -121,7 +121,25 @@
 			<div id="copyright" style="margin-bottom: -5rem; margin-top: -8rem;">
 				<ul>
 					<li>&copy;anurag_singh_2026</li>
-					
+					<li>
+						<p>Last Updated: <span id="last-updated">Loading...</span></p>
+						<script>
+						fetch("https://api.github.com/repos/anurag-env/Portfolio-website/commits?per_page=1")
+						.then(response => response.json())
+						.then(data => {
+							const date = new Date(data[0].commit.committer.date);
+							document.getElementById("last-updated").textContent =
+							date.toLocaleDateString("en-IN", {
+								day: "numeric",
+								month: "long",
+								year: "numeric"
+							});
+						})
+						.catch(() => {
+							document.getElementById("last-updated").textContent = "Unavailable";
+						});
+						</script>
+					</li>
 				</ul>
 			</div>
 		</div>
