@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Contact Info</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		/* Custom Card Grid Styles */
+		.contact-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 2rem;
+			padding: 2rem;
+			align-items: stretch;
+		}
+
+		.contact-card {
+			background: #ffffff;
+			border-radius: 12px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			padding: 3rem 2rem;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			text-decoration: none !important;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			border-bottom: none !important;
+		}
+
+		.contact-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+		}
+
+		.contact-card img {
+			width: 120px;
+			height: 120px;
+			object-fit: contain;
+			margin-bottom: 1.5rem;
+		}
+
+		.contact-card h3 {
+			margin: 0;
+			font-size: 1.8rem;
+			color: #333;
+			font-weight: 600;
+		}
+	</style>
+</head>
+
+<body class="homepage is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header" class="wrapper" style="background: none; z-index: 0;">
+
+			<!-- Image acting as background -->
+			<img src="images/6.jpg" alt="Header Background Image"
+				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="index.html">Contacts</a></h1>
+				<p></p>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">About Me</a></li>
+					<li><a href="resume.html">My Resume</a></li>
+					<li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html">Research</a></li>
+					<li><a href="blogs.html">Blogs</a></li>
+					<li class="current"><a href="contacts.html">Contact info</a></li>
+				</ul>
+			</nav>
+
+		</section>
+
+		<!-- Main -->
+		<section id="main" class="wrapper style2">
+			<div class="title">Contact Info</div>
+			<div class="container">
+
+				<!-- Contact Cards -->
+				<section id="features">
+					<header class="style1" style="margin-bottom: 1rem;">
+						<h2 style="margin-bottom: 0;">Get in Touch</h2>
+						<p style="margin-top: 0.25rem;">Connect with me across the web</p>
+					</header>
+					
+					<div class="contact-grid" style="padding-top: 0;">
+						<!-- LinkedIn -->
+						<a href="https://www.linkedin.com/in/anu-env/" target="_blank" class="contact-card">
+							<img src="images/linkedin.jpg" alt="LinkedIn" />
+							<h3>LinkedIn</h3>
+						</a>
+
+						<!-- GitHub -->
+						<a href="https://github.com/anurag-env" target="_blank" class="contact-card">
+							<img src="images/github.jpg" alt="GitHub" />
+							<h3>GitHub</h3>
+						</a>
+
+                        <!-- Email -->
+						<a href="mailto:anuragsingh.eu@gmail.com" class="contact-card">
+							<img src="images/mails.jpg" alt="Email" />
+							<h3>Gmail</h3>
+						</a>
+
+						<!-- LeetCode -->
+						<a href="https://leetcode.com/u/Cw45iGp8s3/" target="_blank" class="contact-card">
+							<!-- Using a local image if it exists, otherwise falling back to Wikipedia's LeetCode logo -->
+							<img src="images/leetcode.webp" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png'" alt="LeetCode" style="padding: 10px;" />
+							<h3>LeetCode</h3>
+						</a>
+
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer" class="wrapper">
+			<div class="title">Further Contacts</div>
+			<div class="container">				
+				
+				<!-- Social Icons Row -->
+				<div style="text-align: center; margin-bottom: 2rem;">
+					<ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 20px;">
+						<li>
+							<a href="https://twitter.com" target="_blank" style="border-bottom: none; display: inline-block;">
+								<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
+							</a>
+						</li>
+						<li>
+							<a href="https://whatsapp.com" target="_blank" style="border-bottom: none; display: inline-block;">
+								<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
+							</a>
+						</li>
+						<li>
+							<a href="https://instagram.com" target="_blank" style="border-bottom: none; display: inline-block;">
+								<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
+							</a>
+						</li>
+						<li>
+							<a href="https://telegram.org" target="_blank" style="border-bottom: none; display: inline-block;">
+								<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<hr style="border: 0; border-top: 1px solid rgba(128, 128, 128, 0.2); margin: 2rem 0;" />
+				
+                <p>Thanks for Visiting my portfolio!</p>  
+
+				<div id="copyright">
+					<ul>
+						<li>&copy;anurag_singh_2026</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
