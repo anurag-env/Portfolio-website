@@ -55,6 +55,39 @@
 			color: #333;
 			font-weight: 600;
 		}
+
+		.copy-icon {
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+			background-color: white;
+			color: black;
+			border-radius: 6px;
+			padding: 8px 10px;
+			font-size: 1.2rem;
+			opacity: 0;
+			transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+			cursor: pointer;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 10;
+		}
+
+		.contact-card:hover .copy-icon {
+			opacity: 1;
+		}
+
+		.copy-icon:hover {
+			background-color: black;
+			color: white;
+		}
+
+		.copy-icon.copied, .copy-icon.copied:hover {
+			background-color: white !important;
+			color: #28a745 !important;
+		}
 	</style>
 </head>
 
@@ -65,7 +98,7 @@
 		<section id="header" class="wrapper" style="background: none; z-index: 0;">
 
 			<!-- Image acting as background -->
-			<img src="images/6.jpg" alt="Header Background Image"
+			<img src="images/14.jpg" alt="Header Background Image"
 				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
 
 			<!-- Logo -->
@@ -114,9 +147,12 @@
 						</a>
 
                         <!-- Email -->
-						<a href="mailto:anuragsingh.eu@gmail.com" class="contact-card">
+						<a href="mailto:anuragsingh.eu@gmail.com" class="contact-card" style="position: relative;">
 							<img src="images/mails.jpg" alt="Email" />
 							<h3>Gmail</h3>
+							<div class="copy-icon" onclick="copyEmail(event)" title="Copy Email">
+								<i class="fas fa-copy"></i>
+							</div>
 						</a>
 
 						<!-- LeetCode -->
@@ -183,6 +219,51 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		function copyEmail(event) {
+			event.preventDefault(); // Prevent opening mail client
+			event.stopPropagation(); // Stop bubbling
+
+			const email = "anuragsingh.eu@gmail.com";
+			const iconContainer = event.currentTarget;
+			const icon = iconContainer.querySelector('i');
+
+			const showSuccess = () => {
+				if (icon) {
+					icon.className = 'fas fa-check';
+					iconContainer.classList.add('copied');
+					setTimeout(() => {
+						icon.className = 'fas fa-copy';
+						iconContainer.classList.remove('copied');
+					}, 2000);
+				}
+			};
+
+			// Fallback for non-secure contexts (HTTP)
+			if (navigator.clipboard && window.isSecureContext) {
+				navigator.clipboard.writeText(email).then(showSuccess).catch(function(err) {
+					console.error('Could not copy text: ', err);
+				});
+			} else {
+				let textArea = document.createElement("textarea");
+				textArea.value = email;
+				// Move text area out of viewport
+				textArea.style.position = "fixed";
+				textArea.style.left = "-999999px";
+				textArea.style.top = "-999999px";
+				document.body.appendChild(textArea);
+				textArea.focus();
+				textArea.select();
+				try {
+					document.execCommand('copy');
+					showSuccess();
+				} catch (err) {
+					console.error('Fallback: Oops, unable to copy', err);
+				}
+				document.body.removeChild(textArea);
+			}
+		}
+	</script>
 </body>
 
 </html>

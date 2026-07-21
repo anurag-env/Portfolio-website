@@ -3019,3 +3019,123 @@ input, select, textarea {
 						}
 
 	}
+
+/* Professional Resume Section */
+.resume-section {
+    padding: 6em 0;
+    text-align: center;
+}
+
+.resume-header {
+    margin-bottom: 3.5em;
+}
+
+.resume-header h2 {
+    font-size: 2.75em;
+    font-weight: 700;
+    color: #484d55;
+    margin-bottom: 0.25em;
+}
+
+.resume-header p {
+    font-size: 1.25em;
+    color: #919499;
+}
+
+.resume-card-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.resume-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 2.5em;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.resume-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.resume-preview-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.resume-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em 2.5em;
+    font-size: 1.15em;
+    font-weight: 600;
+    text-decoration: none !important;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #484d55 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.resume-btn:focus-visible {
+    outline: 3px solid #e97770;
+    outline-offset: 2px;
+}
+
+.resume-btn:hover {
+    background-color: #f8f9fa;
+    color: #e97770 !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+.resume-btn.primary {
+    background-color: #e97770;
+    color: #fff !important;
+}
+
+.resume-btn.primary:hover {
+    background-color: #d8665f;
+    color: #fff !important;
+}
+
+.resume-btn i {
+    font-size: 1.2em;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 736px) {
+    .resume-section {
+        padding: 4em 0;
+    }
+    
+    .resume-header h2 {
+        font-size: 2.25em;
+    }
+    
+    .resume-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .resume-btn {
+        width: 100%;
+    }
+}
