@@ -2,6 +2,24 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
 
 /*
+Download button
+*/
+
+.download-btn{
+    width: 450px;
+    height: 25px !important;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+
+    padding: 3px !important;
+    line-height: normal !important;
+}
+
+/*
 	Escape Velocity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -1708,8 +1726,11 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #F76C6C url("images/overlay.png");
 			color: #fff;
+			border-radius: 8px;
+			padding-top: 2px;
+			box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.5);
 		}
 
 			input[type="button"].style1:hover,
@@ -1717,7 +1738,7 @@ input, select, textarea {
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #f98780;
+				background-color: #EE5A5A;
 			}
 
 			input[type="button"].style1:active,
@@ -1725,7 +1746,7 @@ input, select, textarea {
 			input[type="reset"].style1:active,
 			button.style1:active,
 			.button.style1:active {
-				background-color: #d96760;
+				background-color:#D94B4B ;
 			}
 
 		input[type="button"].style2,
@@ -2265,7 +2286,7 @@ input, select, textarea {
 			font-size: 2.75em;
 			letter-spacing: 0.075em;
 			line-height: 1.35em;
-			padding: 1em 0 1em 0;
+			padding: 20px;
 			margin-bottom: 1em;
 		}
 
@@ -2405,31 +2426,35 @@ input, select, textarea {
 				background: #3d4249 url("images/overlay.png");
 			}
 
-/* Copyright */
+/* Copyright & Last Updated (Minimalist) */
 
 	#copyright {
 		text-align: center;
-		padding-top: 6em;
-		margin-top: 6em;
+		padding-top: 3.5em;
+		margin-top: 3em;
 		border-top: solid 1px rgba(255, 255, 255, 0.05);
 	}
 
 		#copyright ul {
-			display: inline-block;
-			border-radius: 0.35em;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 0;
+			border-radius: 2em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.05);
-			color: #aaa;
-			color: rgba(255, 255, 255, 0.25);
-			padding: 0.75em 2em;
-			font-size: 0.9em;
+			color: rgba(255, 255, 255, 0.35);
+			padding: 0.5em 1.5em;
+			font-size: 0.82em;
+			letter-spacing: 0.03em;
 		}
 
 			#copyright ul li {
-				display: inline-block;
+				display: inline-flex;
+				align-items: center;
 				margin-left: 1em;
 				padding-left: 1em;
-				border-left: solid 1px #333;
-				border-left-color: rgba(255, 255, 255, 0.05);
+				border-left: solid 1px rgba(255, 255, 255, 0.08);
 			}
 
 				#copyright ul li:first-child {
@@ -2445,6 +2470,58 @@ input, select, textarea {
 			#copyright a:hover {
 				color: #fff;
 			}
+
+	/* Minimalist Green Dot */
+
+	.minimal-dot {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 8px;
+		height: 8px;
+		margin: 0 6px 0 0;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+		.minimal-dot .dot-core {
+			width: 6px;
+			height: 6px;
+			background-color: #22c55e;
+			border-radius: 50%;
+			box-shadow: 0 0 5px rgba(34, 197, 94, 0.6);
+			transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+		}
+
+		.minimal-dot .dot-ping {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background-color: #22c55e;
+			opacity: 0.5;
+			animation: dot-pulse-minimal 2.2s infinite ease-in-out;
+		}
+
+	@keyframes dot-pulse-minimal {
+		0%, 100% {
+			transform: scale(1);
+			opacity: 0.4;
+		}
+		50% {
+			transform: scale(1.8);
+			opacity: 0;
+		}
+	}
+
+		.minimal-dot:hover .dot-core {
+			transform: scale(1.3);
+			background-color: #4ade80;
+			box-shadow: 0 0 8px rgba(74, 222, 128, 0.9);
+		}
+
+
 
 /* XLarge */
 
@@ -3074,6 +3151,7 @@ input, select, textarea {
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 }
 
 .resume-btn {

@@ -52,17 +52,27 @@
 			<div class="container about-container">
 
 				<div class="about-image">
-					<img src="images/My-pic.jpeg" alt="My Photo">
+					<img src="images/Me3.png" alt="My Photo">
 				</div>
 
 				<div class="container" style="">
-					<p class="style2" style="font-size: medium; font-weight: 500;">
+					<p class="style2" style="font-size: large; font-weight: 570; font-style:italic; text-align:justify;">
 						Hi, I am 22 years old, currently in 4th year (Graduating 2027), 
 						pursuing a carrier in Computer Science and Engineering from SMVD University, J&k, India. 
 						Born and brought up in Ayodhya, India.
 						I have done my schooling in Shyam Sundar Saraswati Vidyalaya Inter College in 2021, with Science + Computers as my background.
-						
-						
+						<br>
+						<br>
+						My idea behind taking up Computer Science & Engineering is my love for automation and the fact that, given the knowledge, I can make a computer do almost anything I want it to do.
+						<br>
+						<br>
+						I have a keen interest in the field of Machine Learning, Data Science and Natural Language Processing, and I'm presently learning and working on the skills required to expertise in the same.
+						<br>
+						<br>
+						My hobbies include playing Chess and simulation games, such as Minecraft, Farming Simulator, and Smash Carts; music, browsing YouTube recommendations, scrolling, and binge watching series.
+						<br>
+						<br>
+						I am a firm believer of passion and determination can lead you to success.
 					</p>
 				</div>
 			</div>
@@ -76,12 +86,12 @@
 			<section id="features">
 				<header class="style1">
 					<h2 style="font-size:x-large;">Few keywords which define me are:-</h2>
-					<div style="font-style: italic; font-weight: 700 ;">
-						<li>Emotional</li>
-						<li>Logical</li>
-						<li>Diplomat</li>
-						<li>Deterministic</li>
-						<li>Quite</li>
+					<div style="font-style: italic; font-weight: 700 ; margin-left: 30px;">
+						<li>Dedicated</li>
+						<li>Consistent</li>
+						<li>Analytical</li>
+						<li>Stoic</li>
+						<li>Honest</li>
 					</div>
 
 				</header>
@@ -92,10 +102,10 @@
 				</div>
 		</div>
 	</section>
-	<!-- Footer -->
-	<section id="footer" class="wrapper">
+	<!-- Feedback -->
+	<section id="footer" class="wrapper" style="position: relative;">
 		<div class="title">Feedback</div>
-		<div class="container" style="margin-top: -2rem;">
+		<div class="container" style="margin-top: -2rem; position: relative;">
 			<h3 style="margin-bottom: 0.5rem; margin-top: 1rem;">Suggest for any further improvements...</h3>
 			<p style="margin-bottom: 2rem; margin-top:0 ;">Hello, please submit your feedback in this box, whatever you like, and specially what can be improved more.</p>
 			<div class="row">
@@ -118,30 +128,31 @@
 					</form>
 				</div>
 			</div>
-			<div id="copyright" style="margin-bottom: -5rem; margin-top: -8rem;">
+			<div id="copyright">
 				<ul>
-					<li>&copy;anurag_singh_2026</li>
+					<li>&copy;2026 anurag singh</li>
 					<li>
-						<p>Last Updated: <span id="last-updated">Loading...</span></p>
-						<script>
-						fetch("https://api.github.com/repos/anurag-env/Portfolio-website/commits?per_page=1")
-						.then(response => response.json())
-						.then(data => {
-							const date = new Date(data[0].commit.committer.date);
-							document.getElementById("last-updated").textContent =
-							date.toLocaleDateString("en-IN", {
-								day: "numeric",
-								month: "long",
-								year: "numeric"
-							});
-						})
-						.catch(() => {
-							document.getElementById("last-updated").textContent = "Unavailable";
-						});
-						</script>
+						<span class="minimal-dot" title="Active & Synced"><span class="dot-ping"></span><span class="dot-core"></span></span>Last Updated:&nbsp;<span id="last-updated">Loading...</span>
 					</li>
 				</ul>
 			</div>
+
+			<script>
+			fetch("https://api.github.com/repos/anurag-env/Portfolio-website/commits?per_page=1")
+			.then(response => response.json())
+			.then(data => {
+				const date = new Date(data[0].commit.committer.date);
+				document.getElementById("last-updated").textContent =
+				date.toLocaleDateString("en-IN", {
+					day: "numeric",
+					month: "long",
+					year: "numeric"
+				});
+			})
+			.catch(() => {
+				document.getElementById("last-updated").textContent = "Unavailable";
+			});
+			</script>
 		</div>
 	</section>
 
