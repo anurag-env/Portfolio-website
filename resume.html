@@ -1,68 +1,486 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>My Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
 
-			<!-- Header -->
-				<section id="header" class="wrapper" style="background: none; z-index: 0;">
+<head>
+	<title>My Resume | Interactive Qualifications</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- Core & Template Styles -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- Custom Resume Extension Styles -->
+	<link rel="stylesheet" href="assets/css/resume.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
 
-					<!-- Image acting as background -->
-					<img src="images/1.jpg" alt="Header Background Image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
+<body class="homepage is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header" class="wrapper" style="background: none; z-index: 0;">
+
+			<!-- Header Background Image -->
+			<img src="images/1.jpg" alt="Header Background Image"
+				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="index.html">My Resume</a></h1>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">About Me</a></li>
+					<li class="current"><a href="resume.html">My Resume</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="blogs.html">Blogs</a></li>
+					<li><a href="contacts.html">Contact info</a></li>
+				</ul>
+			</nav>
+
+		</section>
+
+		<!-- Skills -->
+		<section id="main" class="wrapper style1">
+		<div class="title">Skills</div>
+			<div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 1em;">
+
+				<!-- Skills Matrix -->
+				<div class="skills-matrix">
 					
-					<!-- Logo -->
-						<div id="logo">
-							<h1><a href="index.html">My Resume</a></h1>
-							<p></p>
+					<!-- LANGUAGES -->
+					<div class="skills-row">
+						<div class="skills-category-title">LANGUAGES</div>
+						<div class="skills-pills-container">
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-python-plain colored"></i></span>
+								<span class="skill-label">Python</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-java-plain colored"></i></span>
+								<span class="skill-label">Java</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="#00758f" style="vertical-align: middle;">
+										<path d="M12 2C6.48 2 2 3.79 2 6v12c0 2.21 4.48 4 10 4s10-1.79 10-4V6c0-2.21-4.48-4-10-4zm0 2c4.42 0 8 1.34 8 2s-3.58 2-8 2-8-1.34-8-2 3.58-2 8-2zm0 5c4.42 0 8 1.34 8 2s-3.58 2-8 2-8-1.34-8-2 3.58-2 8-2zm0 5c4.42 0 8 1.34 8 2s-3.58 2-8 2-8-1.34-8-2 3.58-2 8-2z"/>
+									</svg>
+								</span>
+								<span class="skill-label">SQL</span>
+							</div>
+							
 						</div>
+					</div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">About Me</a></li>
-								<li class="current"><a href="resume.html">My Resume</a></li>
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="research.html">Research</a></li>
-								<li><a href="blogs.html">Blogs</a></li>
-								<li><a href="contacts.html">Contact info</a></li>
-							</ul>
-						</nav>
-
-				</section>
-
-			<!-- Resume Content -->
-			<section id="resume" class="resume-section">
-				<div class="container">
-					<header class="title resume-header">
-						<h2>Professional History</h2>
-						<p>A detailed overview of my experience, skills, education, and projects.</p>
-					</header>
-
-					<div class="resume-card-container">
-						<div class="resume-card">
-							<img src="images/Resume.png" alt="Resume Preview" class="resume-preview-img" />
+					<!-- FRAMEWORKS -->
+					<div class="skills-row">
+						<div class="skills-category-title">FRAMEWORKS</div>
+						<div class="skills-pills-container">
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-django-plain colored"></i></span>
+								<span class="skill-label">Django</span>
+							</div>
+							
 						</div>
+					</div>
 
-						<ul class="actions" style="justify-content: center; text-align: center; margin-top: 2rem;">
-							<li><a href="assets/Resume_Me.pdf" download class="button style1 download-btn" aria-label="Download Resume PDF">Download Resume</a></li>
+					<!-- LIBRARIES -->
+					<div class="skills-row">
+						<div class="skills-category-title">LIBRARIES</div>
+						<div class="skills-pills-container">
+							<div class="skill-pill">
+								<span class="skill-icon">
+									<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0d8c7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+										<path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/>
+										<path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0-.34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/>
+									</svg>
+								</span>
+								<span class="skill-label">LLMs / Foundation Models</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-pytorch-original colored"></i></span>
+								<span class="skill-label">Pytorch</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-tensorflow-original colored"></i></span>
+								<span class="skill-label">TensorFlow</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-huggingface-original colored"></i></span>
+								<span class="skill-label">Hugging Face</span>
+							</div>
+							
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-scikitlearn-plain colored"></i></span>
+								<span class="skill-label">Scikit-learn</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-pandas-plain colored"></i></span>
+								<span class="skill-label">Pandas</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-numpy-plain colored"></i></span>
+								<span class="skill-label">NumPy</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- DATABASES -->
+					<div class="skills-row">
+						<div class="skills-category-title">DATABASES</div>
+						<div class="skills-pills-container">
+						
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-sqlite-plain colored"></i></span>
+								<span class="skill-label">SQLite</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- CONCEPTS -->
+					<div class="skills-row">
+						<div class="skills-category-title">CONCEPTS</div>
+						<div class="skills-pills-container">
+							
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="fas fa-code" style="color: #0d8c7f; font-size: 0.9rem;"></i></span>
+								<span class="skill-label">DSA</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="fas fa-language" style="color: #0d8c7f; font-size: 0.9rem;"></i></span>
+								<span class="skill-label">NLP</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="fas fa-brain" style="color: #0d8c7f; font-size: 0.9rem;"></i></span>
+								<span class="skill-label">Machine Learning</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="fas fa-network-wired" style="color: #0d8c7f; font-size: 0.9rem;"></i></span>
+								<span class="skill-label">Deep Learning</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="fas fa-plug" style="color: #0d8c7f; font-size: 0.9rem;"></i></span>
+								<span class="skill-label">REST APIs</span>
+							</div>
+							
+						</div>
+					</div>
+
+					<!-- TOOLS -->
+					<div class="skills-row">
+						<div class="skills-category-title">TOOLS</div>
+						<div class="skills-pills-container">
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-git-plain colored"></i></span>
+								<span class="skill-label">Git</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-github-original colored"></i></span>
+								<span class="skill-label">GitHub</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-linux-plain colored"></i></span>
+								<span class="skill-label">Linux / Bash</span>
+							</div>
+							
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-postman-plain"></i></span>
+								<span class="skill-label">Postman</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="devicon-jupyter-plain colored"></i></span>
+								<span class="skill-label">Jupyter</span>
+							</div>
+							<div class="skill-pill">
+								<span class="skill-icon"><i class="fas fa-project-diagram" style="color: #0d8c7f; font-size: 0.9rem;"></i></span>
+								<span class="skill-label">N8N</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Section: Main Resume / Professional History -->
+		<section id="resume-top" class="wrapper style2" style="padding-bottom: 2em;">
+			<div class="title">
+				Professional Journey
+			</div>
+
+
+		    <div class="timeline">
+
+		        <!-- Eduspheria Full-time -->
+		        <div class="timeline-item">
+
+		            <div class="timeline-icon">
+		                <i class="fa-solid fa-briefcase"></i>
+		            </div>
+
+		            <div class="card">
+
+		                <div class="card-header">
+
+		                    <div class="company">
+
+		                        <img src="https://eduspheria.com/static/images/logo.png" alt="Apple">
+
+		                        <div>
+		                            <h3>Eduspheria Private Limited</h3>
+		                            <p>Artificial Intelligence Engineer</p>
+		                        </div>
+
+		                    </div>
+
+		                    <span class="date">Jan 2023 – Present</span>
+
+		                </div>
+
+		                <ul>
+		                    
+		                    <li>Designed and developed AI-powered web applications using Django, integrating intelligent AI agents with tool-calling workflows and automation using n8n.</li>
+		                    <li>Built interactive AI-based learning modules and backend systems, enabling students to engage with intelligent educational applications in a scalable web environment.</li>
+		                    <li>Collaborated on the architecture and implementation of an AI Lab platform, contributing to backend development, workflow automation, and deployment of AI-driven solutions.</li>
+		                </ul>
+
+		            </div>
+
+		        </div>
+		        <!-- Eduspheria - Intern -->
+
+		        <div class="timeline-item">
+
+		            <div class="timeline-icon">
+		                <i class="fa-solid fa-briefcase"></i>
+		            </div>
+
+		            <div class="card">
+
+		                <div class="card-header">
+
+		                    <div class="company">
+
+		                        <img src="https://eduspheria.com/static/images/logo.png" alt="Apple">
+
+		                        <div>
+		                            <h3>Eduspheria Private Limited</h3>
+		                            <p>AI Development Intern</p>
+		                        </div>
+
+		                    </div>
+
+		                    <span class="date">Jan 2023 – Present</span>
+
+		                </div>
+
+		                <ul>
+		                	<li>Developed backend components and AI-powered educational tools using Python, Django, and n8n, enabling intelligent user experiences</li>
+		                	
+		                    <li>Implemented and integrated LLM-based AI agents and interactive educational applications, gaining hands-on experience with AI-driven web solutions.</li>
+
+		                    <li>Participated in the development of an AI Lab platform by implementing AI features, testing workflows, and supporting deployment of AI-enabled applications.</li>
+		                </ul>
+
+		            </div>
+
+		        </div>
+
+		        <!-- Freelance -->
+
+		        <div class="timeline-item">
+
+		            <div class="timeline-icon">
+		                <i class="fa-solid fa-laptop-code"></i>
+		            </div>
+
+		            <div class="card">
+
+		                <div class="card-header">
+
+		                    <div class="company">
+
+		                        <img src="images/Logo.jpg" alt="Apple">
+
+		                        <div>
+		                            <h3>Freelance</h3>
+		                            <p>Software Developer & Technical Writer</p>
+		                        </div>
+
+		                    </div>
+
+		                    <span class="date">Jan 2023 – Present</span>
+
+		                </div>
+
+		                <ul>
+		                    <li>Developed AI-powered applications, chatbots, and web solutions using Python and Django.</li>
+
+		                    <li>Delivered technical documentation and research manuscripts in AI, Machine Learning, and Computer Science.</li>
+
+		                    <li>Built client-specific software projects, including automation workflows and web applications.</li>
+		                </ul>
+
+		            </div>
+
+		        </div>
+
+		        <!-- B.tech -->
+
+		        <div class="timeline-item">
+
+		            <div class="timeline-icon">
+		                <i class="fa-solid fa-graduation-cap"></i>
+		            </div>
+
+		            <div class="card education">
+
+		                <div class="card-header">
+
+		                    <div class="company">
+
+		                        <img src="https://admission.smvdu.ac.in/images/logo.png" alt="University">
+
+		                        <div>
+		                            <h3>Shri Mata Vaishno Devi University</h3>
+           							<p>B.Tech in Computer Science & Engineering</p>
+
+		                        </div>
+
+		                    </div>
+
+		                    <span class="date">Aug 2023 – May 2027 (Expected)</span>
+
+		                </div>
+
+		                <ul>
+		                	<li>
+		                		Research: NLP and Transformer-based sentiment analysis; research paper accepted at NLPIR 2026 for publication in Springer LNNS. 
+		                	</li>
+
+		                    <li>Relevant Coursework: Data Structures & Algorithms, Machine Learning, Artificial Intelligence, DBMS and Operating Systems.</li>
+						    <li>Co-Lead, AI Club — contributing to AI-focused technical activities and events.</li>
+						    <li>Smart India Hackathon (SIH) Finalist.</li>
+		                </ul>
+
+		            </div>
+
+		        </div>
+
+		        <!-- 12th -->
+
+		        <div class="timeline-item">
+
+		            <div class="timeline-icon">
+		                <i class="fa-solid fa-school"></i>
+		            </div>
+
+		            <div class="card">
+
+		                <div class="card-header">
+
+		                    <div class="company">
+
+		                        <img src="images/SSV.png" alt="Apple">
+
+		                        <div>
+		                            <h3>Shyam Sundar Saraswati Vidyalaya Inter College</h3>
+		                            <p>Senior Secondary Education (Class XII) — Science</p>
+		                        </div>
+
+		                    </div>
+
+		                    <span class="date">Apr 2019 – Mar 2021</span>
+
+		                </div>
+
+		                <ul>		               
+
+		                    <li>Science stream with Physics, Chemistry and Mathematics.</li>
+		                    <li>Achievement: Represented my school at the State-Level Science Exhibition</li>
+		                    <li>80%</li>
+		              
+		                </ul>
+
+		            </div>
+
+		        </div>
+
+		        <!-- 10th -->
+
+		        <div class="timeline-item">
+
+		            <div class="timeline-icon">
+		                <i class="fa-solid fa-school"></i>
+		            </div>
+
+		            <div class="card">
+
+		                <div class="card-header">
+
+		                    <div class="company">
+
+		                        <img src="images/SSV.png" alt="Apple">
+
+		                        <div>
+		                            <h3>Shyam Sundar Saraswati Vidyalaya Inter College</h3>
+		                            <p>Secondary Education (Class X)</p>
+		                        </div>
+
+		                    </div>
+
+		                    <span class="date">Apr 2017 – Mar 2019</span>
+
+		                </div>
+
+		                <ul>
+		                    <li>85%</li>
+
+		            </div>
+
+		        </div>
+
+		    </div>
+		    <!-- Original Download Resume Button Integrated -->
+					<div class="resume-action-bar">
+						<a href="assets/Resume_Me.pdf" download class="button style1 download-btn" aria-label="Download Resume PDF">
+							<i class="fas fa-download" style="margin-right: 0.5em;"></i> Download Resume
+						</a>
+					</div>
+		</section>
+		    
+		
+		<!-- Download Resume -->
+		<section id="footer" class="wrapper" style="padding-top: 0em;padding-bottom: 1em;">
+					
+					<div id="copyright">
+						<ul>
+							<li>&copy;2026 anurag singh</li>
 						</ul>
 					</div>
-				</div>
-			</section>
+		</section>
 
-		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+
+	<!-- Template & Core Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!-- Custom Resume Extension Script -->
+	<script src="assets/js/resume.js"></script>
+</body>
+
 </html>
+
+
