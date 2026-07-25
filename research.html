@@ -1,92 +1,842 @@
 <!DOCTYPE HTML>
-<!--
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-
 <head>
-	<title>Research</title>
+	<title>Research | Anurag Singh</title>
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<style>
-		/* Custom Card Grid Styles */
-		.contact-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			gap: 2rem;
-			padding: 2rem;
-			align-items: stretch;
-		}
-
-		.contact-card {
-			background: #ffffff;
-			border-radius: 12px;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			text-align: center;
-			padding: 3rem 2rem;
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
-			text-decoration: none !important;
-			color: inherit;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			border-bottom: none !important;
-		}
-
-		.contact-card:hover {
-			transform: translateY(-10px);
-			box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-		}
-
-		.contact-card img {
-			width: 120px;
-			height: 120px;
-			object-fit: contain;
-			margin-bottom: 1.5rem;
-		}
-
-		.contact-card h3 {
-			margin: 0;
-			font-size: 1.8rem;
-			color: #333;
-			font-weight: 600;
-		}
-	</style>
+	<link rel="stylesheet" href="assets/css/research.css" />
 </head>
 
 <body class="homepage is-preload">
-	<div id="page-wrapper">
 
-		<!-- Header -->
-		<section id="header" class="wrapper" style="background: none; z-index: 0;">
+<div id="page-wrapper">
 
-			<!-- Image acting as background -->
-			<img src="images/9.jpg" alt="Header Background Image"
-				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
+	<!-- ================= HEADER ================= -->
 
-			<!-- Logo -->
-			<div id="logo">
-				<h1><a href="index.html">My Research</a></h1>
-				<p>Comming Soon...</p>
+	<section id="header" class="wrapper" style="background: none; z-index: 0;">
+
+		<img
+			src="images/18.jpg"
+			alt="Research Header Background"
+			style="
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				object-fit:cover;
+				z-index:-1;
+			"
+		/>
+
+		<div id="logo">
+			<h1><a href="research.html">My Research</a></h1>
+			<p>Natural Language Processing · Machine Learning · Deep Learning</p>
+		</div>
+
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">About Me</a></li>
+				<li><a href="resume.html">My Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li class="current"><a href="research.html">Research</a></li>
+				<li><a href="blogs.html">Blogs</a></li>
+				<li><a href="contacts.html">Contact info</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+
+	<!-- ================= RESEARCH ================= -->
+
+	<section class="research-section wrapper style2">
+
+		<div class="container">
+
+			<header class="research-intro">
+
+				<span class="section-label">RESEARCH</span>
+
+				<h2 class="title">Research & Publications</h2>
+
+				<p>
+					My research interests lie in Natural Language Processing,
+					transformer-based learning, machine learning, and intelligent
+					systems. I am particularly interested in applying deep learning
+					techniques to real-world language and social media data.
+				</p>
+
+			</header>
+
+
+			<!-- ================= ACCEPTED PAPER ================= -->
+
+			<article class="research-card featured-paper">
+
+				<div class="research-card-top">
+
+					<span class="research-status accepted">
+						<i class="fas fa-check-circle"></i>
+						Accepted
+					</span>
+
+					<span class="research-year">2026</span>
+
+				</div>
+
+
+				<h3 class="research-title">
+					RoBERTa-Driven Transformer Framework for
+					Context-Aware Sentiment Classification of
+					Social Media Text
+				</h3>
+
+
+				<div class="conference-info">
+
+					<p class="conference-name">
+						<i class="fas fa-university"></i>
+						10th International Conference on Natural Language
+						Processing and Information Retrieval (NLPIR 2026)
+					</p>
+
+					<p class="conference-location">
+
+						<span>
+							<i class="fas fa-map-marker-alt"></i>
+							Nara, Japan
+						</span>
+
+						<span>
+							<i class="far fa-calendar-alt"></i>
+							December 11–13, 2026
+						</span>
+
+					</p>
+
+				</div>
+
+
+				<p class="research-description">
+					A transformer-based framework for multi-class sentiment
+					classification of social media text using Twitter-RoBERTa.
+					The study evaluates an end-to-end NLP pipeline on 18,170
+					YouTube comments.
+				</p>
+
+
+				<!-- ================= METRICS ================= -->
+
+				<div class="research-highlights">
+
+					<div class="highlight-item">
+						<span
+							class="highlight-value counter"
+							data-target="18170"
+							data-format="comma">
+							0
+						</span>
+						<span class="highlight-label">Comments</span>
+					</div>
+
+					<div class="highlight-item">
+						<span
+							class="highlight-value counter"
+							data-target="96"
+							data-suffix="%">
+							0
+						</span>
+						<span class="highlight-label">Accuracy</span>
+					</div>
+
+					<div class="highlight-item">
+						<span
+							class="highlight-value counter"
+							data-target="0.96"
+							data-decimals="2">
+							0
+						</span>
+						<span class="highlight-label">Weighted F1</span>
+					</div>
+
+					<div class="highlight-item">
+						<span
+							class="highlight-value counter"
+							data-target="0.95"
+							data-decimals="2">
+							0
+						</span>
+						<span class="highlight-label">Macro F1</span>
+					</div>
+
+				</div>
+
+
+				<!-- ================= TAGS ================= -->
+
+				<div class="research-tags">
+					<span>Natural Language Processing</span>
+					<span>RoBERTa</span>
+					<span>Transformers</span>
+					<span>Sentiment Analysis</span>
+					<span>Deep Learning</span>
+				</div>
+
+
+				<!-- ================= ABSTRACT ================= -->
+
+				<div class="abstract-wrapper">
+
+					<button
+						class="abstract-toggle"
+						id="abstractToggle"
+						type="button"
+						aria-expanded="false"
+						aria-controls="paperAbstract">
+
+						<span>
+							<i class="far fa-file-alt"></i>
+							View Abstract
+						</span>
+
+						<i class="fas fa-chevron-down abstract-arrow"></i>
+
+					</button>
+
+
+					<div class="abstract-content" id="paperAbstract">
+
+						<div class="abstract-inner">
+
+							<span class="abstract-label">ABSTRACT</span>
+
+							<p>
+								This research investigates context-aware sentiment
+								classification of social media text using a
+								RoBERTa-based transformer framework. The study
+								uses a dataset containing 18,170 YouTube comments
+								and develops an end-to-end NLP pipeline involving
+								text preprocessing, RoBERTa tokenization, transfer
+								learning, weighted cross-entropy loss, and label
+								smoothing.
+							</p>
+
+							<p>
+								The resulting model achieved an overall accuracy
+								of 96%, a weighted F1-score of 0.96, and a macro
+								F1-score of 0.95, demonstrating the effectiveness
+								of transformer-based architectures for sentiment
+								classification of noisy social media text.
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<!-- ================= TIMELINE ================= -->
+
+				<div class="publication-progress">
+
+					<div class="progress-heading">
+						<span>Publication Journey</span>
+						<span class="progress-caption">NLPIR 2026</span>
+					</div>
+
+
+					<div class="timeline">
+
+						<div class="timeline-line">
+							<div class="timeline-line-completed"></div>
+						</div>
+
+
+						<div class="timeline-step completed">
+
+							<div class="timeline-dot">
+								<i class="fas fa-check"></i>
+							</div>
+
+							<span>Research</span>
+
+						</div>
+
+
+						<div class="timeline-step completed">
+
+							<div class="timeline-dot">
+								<i class="fas fa-check"></i>
+							</div>
+
+							<span>Submitted</span>
+
+						</div>
+
+
+						<div class="timeline-step completed current">
+
+							<div class="timeline-dot">
+								<i class="fas fa-check"></i>
+							</div>
+
+							<span>Accepted</span>
+
+						</div>
+
+
+						<div class="timeline-step">
+
+							<div class="timeline-dot">
+								<i class="fas fa-microphone"></i>
+							</div>
+
+							<span>Presentation</span>
+
+						</div>
+
+
+						<div class="timeline-step">
+
+							<div class="timeline-dot">
+								<i class="fas fa-book-open"></i>
+							</div>
+
+							<span>Published</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<!-- ================= ACTIONS ================= -->
+
+				<div class="research-actions">
+
+					<button
+						class="research-btn primary"
+						id="detailsButton"
+						type="button">
+
+						<i class="fas fa-info-circle"></i>
+						Paper Details
+
+					</button>
+
+
+					<!-- Replace # with official conference URL -->
+
+					<a
+						href="https://nlpir.net/"
+						class="research-btn secondary">
+
+						<i class="fas fa-external-link-alt"></i>
+						Conference
+
+					</a>
+
+				</div>
+
+
+				<p class="publication-note">
+
+					<i class="fas fa-info-circle"></i>
+
+					Accepted for oral presentation and publication.
+					The official publication link will be added once
+					the proceedings become available.
+
+				</p>
+
+			</article>
+
+
+			<!-- ================= ONGOING RESEARCH ================= -->
+
+			<div class="ongoing-heading">
+
+				<span class="section-label">CURRENT WORK</span>
+
+				
+
+				<p>
+					Exploring new problems and ideas through ongoing research.
+				</p>
+
 			</div>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li><a href="index.html">About Me</a></li>
-					<li><a href="resume.html">My Resume</a></li>
-					<li><a href="projects.html">Projects</a></li>
-                    <li><a href="research.html">Research</a></li>
-					<li><a href="blogs.html">Blogs</a></li>
-					<li class="current"><a href="contacts.html">Contact info</a></li>
-				</ul>
-			</nav>
 
-		</section>
-    </div>
+			<article class="research-card ongoing-paper">
+
+				<div class="research-card-top">
+
+					<span class="research-status progress">
+						<i class="fas fa-flask"></i>
+						In Progress
+					</span>
+
+					<span class="research-year">2026</span>
+
+				</div>
+
+
+				<h3 class="research-title">
+					Recursive Attention-Guided RoBERTa Framework for
+Explainable Multilingual Biomedical Question Answering
+and Voice-Based Clinical Decision Support
+				</h3>
+
+
+				<p class="research-description">
+					An ongoing research study exploring explainable biomedical
+question answering with multilingual English–Hindi support.
+The proposed system investigates evidence-grounded semantic
+reasoning, explainability, confidence estimation, and
+voice-based response generation for biomedical applications.
+				</p>
+
+
+				<div class="research-tags">
+					<span>Biomedical QA</span>
+					<span>RoBERTa</span>
+					<span>Explainable AI</span>
+					<span>Multilingual NLP</span>
+					<span>Voice AI</span>
+				</div>
+
+
+				<div class="ongoing-message">
+
+					<i class="fas fa-lock"></i>
+
+					<span>
+						 Methodology and experimental results are currently
+   under development.
+					</span>
+
+				</div>
+
+			</article>
+
+		</div>
+
+	</section>
+
+</div>
+
+
+<!-- ================= PAPER DETAILS MODAL ================= -->
+
+<div class="research-modal" id="paperModal">
+
+	<div class="modal-backdrop" id="modalBackdrop"></div>
+
+
+	<div
+		class="modal-container"
+		role="dialog"
+		aria-modal="true"
+		aria-labelledby="modalPaperTitle">
+
+		<button
+			class="modal-close"
+			id="modalClose"
+			type="button"
+			aria-label="Close paper details">
+
+			<i class="fas fa-times"></i>
+
+		</button>
+
+
+		<div class="modal-header">
+
+			<span class="research-status accepted">
+				<i class="fas fa-check-circle"></i>
+				Accepted
+			</span>
+
+			<h2 id="modalPaperTitle">
+				RoBERTa-Driven Transformer Framework for
+				Context-Aware Sentiment Classification of
+				Social Media Text
+			</h2>
+
+		</div>
+
+
+		<div class="modal-body">
+
+			<div class="modal-detail">
+
+				<span class="modal-detail-label">
+					Conference
+				</span>
+
+				<p>
+					10th International Conference on Natural Language
+					Processing and Information Retrieval (NLPIR 2026)
+				</p>
+
+			</div>
+
+
+			<div class="modal-detail-grid">
+
+				<div class="modal-detail">
+
+					<span class="modal-detail-label">
+						Location
+					</span>
+
+					<p>Nara, Japan</p>
+
+				</div>
+
+
+				<div class="modal-detail">
+
+					<span class="modal-detail-label">
+						Date
+					</span>
+
+					<p>December 11–13, 2026</p>
+
+				</div>
+
+
+				<div class="modal-detail">
+
+					<span class="modal-detail-label">
+						Status
+					</span>
+
+					<p>Accepted for Oral Presentation</p>
+
+				</div>
+
+
+				<div class="modal-detail">
+
+					<span class="modal-detail-label">
+						Publication
+					</span>
+
+					<p>Upcoming</p>
+
+				</div>
+
+			</div>
+
+
+			<div class="modal-detail">
+
+				<span class="modal-detail-label">
+					Research Focus
+				</span>
+
+				<p>
+					Context-aware multi-class sentiment classification
+					of social media text using transformer-based
+					language models.
+				</p>
+
+			</div>
+
+
+			<div class="modal-detail">
+
+				<span class="modal-detail-label">
+					Key Results
+				</span>
+
+				<div class="modal-results">
+
+					<span>
+						<strong>96%</strong>
+						Accuracy
+					</span>
+
+					<span>
+						<strong>0.96</strong>
+						Weighted F1
+					</span>
+
+					<span>
+						<strong>0.95</strong>
+						Macro F1
+					</span>
+
+				</div>
+
+			</div>
+
+
+			<div class="modal-detail">
+
+				<span class="modal-detail-label">
+					Keywords
+				</span>
+
+				<div class="research-tags modal-tags">
+					<span>NLP</span>
+					<span>RoBERTa</span>
+					<span>Transformers</span>
+					<span>Sentiment Analysis</span>
+					<span>Deep Learning</span>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<!-- ================= TEMPLATE SCRIPTS ================= -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+<!-- ================= RESEARCH INTERACTIONS ================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+	/* ================================================
+	   EXPANDABLE ABSTRACT
+	================================================ */
+
+	const abstractButton = document.getElementById("abstractToggle");
+	const abstractContent = document.getElementById("paperAbstract");
+
+	if (abstractButton && abstractContent) {
+
+		abstractButton.addEventListener("click", function () {
+
+			const isOpen = abstractContent.classList.toggle("open");
+
+			abstractButton.classList.toggle("active", isOpen);
+
+			abstractButton.setAttribute(
+				"aria-expanded",
+				isOpen ? "true" : "false"
+			);
+
+			const text = abstractButton.querySelector("span");
+
+			text.innerHTML = isOpen
+				? '<i class="far fa-file-alt"></i> Hide Abstract'
+				: '<i class="far fa-file-alt"></i> View Abstract';
+
+		});
+
+	}
+
+
+	/* ================================================
+	   ANIMATED RESEARCH METRICS
+	================================================ */
+
+	const counters = document.querySelectorAll(".counter");
+
+	const animateCounter = function (counter) {
+
+		if (counter.dataset.animated === "true") {
+			return;
+		}
+
+		counter.dataset.animated = "true";
+
+		const target = parseFloat(counter.dataset.target);
+		const decimals = parseInt(counter.dataset.decimals || "0");
+		const suffix = counter.dataset.suffix || "";
+		const format = counter.dataset.format;
+
+		const duration = 1200;
+		const startTime = performance.now();
+
+
+		function updateCounter(currentTime) {
+
+			const elapsed = currentTime - startTime;
+
+			const progress = Math.min(
+				elapsed / duration,
+				1
+			);
+
+			const easedProgress =
+				1 - Math.pow(1 - progress, 3);
+
+			const currentValue =
+				target * easedProgress;
+
+
+			let displayValue;
+
+			if (decimals > 0) {
+
+				displayValue =
+					currentValue.toFixed(decimals);
+
+			} else {
+
+				displayValue =
+					Math.round(currentValue).toString();
+
+			}
+
+
+			if (format === "comma") {
+
+				displayValue =
+					Math.round(currentValue)
+						.toLocaleString();
+
+			}
+
+
+			counter.textContent =
+				displayValue + suffix;
+
+
+			if (progress < 1) {
+
+				requestAnimationFrame(updateCounter);
+
+			}
+
+		}
+
+
+		requestAnimationFrame(updateCounter);
+
+	};
+
+
+	const counterObserver = new IntersectionObserver(
+
+		function (entries, observer) {
+
+			entries.forEach(function (entry) {
+
+				if (entry.isIntersecting) {
+
+					animateCounter(entry.target);
+
+					observer.unobserve(entry.target);
+
+				}
+
+			});
+
+		},
+
+		{
+			threshold: 0.5
+		}
+
+	);
+
+
+	counters.forEach(function (counter) {
+		counterObserver.observe(counter);
+	});
+
+
+	/* ================================================
+	   PAPER DETAILS MODAL
+	================================================ */
+
+	const modal = document.getElementById("paperModal");
+	const detailsButton = document.getElementById("detailsButton");
+	const closeButton = document.getElementById("modalClose");
+	const backdrop = document.getElementById("modalBackdrop");
+
+
+	function openModal() {
+
+		modal.classList.add("open");
+
+		document.body.classList.add("modal-open");
+
+	}
+
+
+	function closeModal() {
+
+		modal.classList.remove("open");
+
+		document.body.classList.remove("modal-open");
+
+	}
+
+
+	if (detailsButton) {
+
+		detailsButton.addEventListener(
+			"click",
+			openModal
+		);
+
+	}
+
+
+	if (closeButton) {
+
+		closeButton.addEventListener(
+			"click",
+			closeModal
+		);
+
+	}
+
+
+	if (backdrop) {
+
+		backdrop.addEventListener(
+			"click",
+			closeModal
+		);
+
+	}
+
+
+	document.addEventListener(
+		"keydown",
+		function (event) {
+
+			if (
+				event.key === "Escape" &&
+				modal.classList.contains("open")
+			) {
+
+				closeModal();
+
+			}
+
+		}
+	);
+
+});
+
+</script>
+
 </body>
-</html> 
+</html>

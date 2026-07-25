@@ -1,0 +1,633 @@
+/* =========================================================
+PROJECTS PAGE
+Minimal + Interactive Project Cards
+========================================================= */
+
+/* ---------------------------------------------------------
+PROJECT SECTION
+--------------------------------------------------------- */
+
+.projects-section {
+padding-top: 6em;
+}
+
+.project-grid {
+align-items: stretch;
+}
+
+.project-column {
+display: flex;
+}
+
+/* ---------------------------------------------------------
+PROJECT CARD
+--------------------------------------------------------- */
+
+.project-card {
+width: 92%;
+margin: 0 auto;
+
+display: flex;
+flex-direction: column;
+
+   
+background: #ffffff;
+
+border: 1px solid #e8e8e8;
+border-radius: 10px;
+
+overflow: hidden;
+
+box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+
+transition:
+	transform 0.3s ease,
+	box-shadow 0.3s ease,
+	border-color 0.3s ease;
+   
+
+}
+
+/* Card hover */
+
+.project-card:hover {
+transform: translateY(-3px);
+
+   
+border-color: #dddddd;
+
+box-shadow:
+	0 14px 35px rgba(0, 0, 0, 0.09);
+   
+
+}
+
+/* ---------------------------------------------------------
+PROJECT IMAGE
+--------------------------------------------------------- */
+
+.project-image {
+position: relative;
+
+   
+display: block;
+
+width: 100%;
+aspect-ratio: 1/1;
+overflow: hidden;
+
+text-decoration: none;
+
+background: #eeeeee;
+   
+
+}
+
+.project-image img {
+width: 100%;
+height: 100%;
+
+	
+object-fit: cover;
+
+display: block;
+
+transition: transform 0.5s ease;
+   
+
+}
+
+/* Image zoom */
+
+.project-card:hover .project-image img {
+transform: scale(1.055);
+}
+
+/* ---------------------------------------------------------
+IMAGE OVERLAY
+--------------------------------------------------------- */
+
+.project-image-overlay {
+position: absolute;
+
+   
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: rgba(35, 38, 44, 0.55);
+
+opacity: 0;
+
+transition: opacity 0.3s ease;
+   
+
+}
+
+.project-image-overlay span {
+color: #ffffff;
+
+   
+font-size: 0.78em;
+font-weight: 700;
+
+text-transform: uppercase;
+
+letter-spacing: 0.12em;
+
+transform: translateY(8px);
+
+transition: transform 0.3s ease;
+   
+
+}
+
+.project-image-overlay i {
+margin-right: 7px;
+
+   
+font-size: 1.15em;
+   
+
+}
+
+/* Overlay hover */
+
+.project-card:hover .project-image-overlay {
+opacity: 1;
+}
+
+.project-card:hover .project-image-overlay span {
+transform: translateY(0);
+}
+
+/* ---------------------------------------------------------
+PROJECT CONTENT
+--------------------------------------------------------- */
+
+.project-content {
+display: flex;
+flex-direction: column;
+flex: 1;
+
+   
+padding: 1.25em 1.35em 1.2em;
+
+text-align: left;
+   
+
+}
+
+/* ---------------------------------------------------------
+PROJECT META
+--------------------------------------------------------- */
+
+.project-meta {
+display: flex;
+
+   
+align-items: center;
+justify-content: space-between;
+
+margin-bottom: 0.75em;
+   
+
+}
+
+/* Project number */
+
+.project-number {
+font-size: 0.68em;
+
+   
+font-weight: 700;
+
+color: #b0b2b5;
+
+letter-spacing: 0.12em;
+   
+
+}
+
+/* Project category */
+
+.project-type {
+font-size: 0.67em;
+
+   
+font-weight: 700;
+
+color: #e97770;
+
+letter-spacing: 0.08em;
+
+text-transform: uppercase;
+   
+
+}
+
+/* ---------------------------------------------------------
+PROJECT TITLE
+--------------------------------------------------------- */
+
+.project-title {
+margin: 0 0 0.55em 0 !important;
+
+   
+font-size: 1.15em !important;
+
+line-height: 1.4em;
+
+letter-spacing: 0.025em !important;
+
+color: #484d55 !important;
+   
+
+}
+
+.project-title a {
+color: inherit;
+
+   
+text-decoration: none;
+
+transition: color 0.25s ease;
+   
+
+}
+
+.project-title a:hover {
+color: #e97770;
+}
+
+/* ---------------------------------------------------------
+PROJECT DESCRIPTION
+--------------------------------------------------------- */
+
+.project-description {
+margin: 0 0 1.2em 0;
+
+   
+color: #7b7e83;
+
+font-size: 0.88em;
+
+line-height: 1.2em;
+
+letter-spacing: 0.01em;
+   
+min-height: 4.5em;
+
+}
+
+/* ---------------------------------------------------------
+TECH STACK PILLS
+--------------------------------------------------------- */
+
+.project-tech {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+
+	gap: 7px;
+
+	/* Same area for every card */
+	min-height: 45px;
+
+	margin-top: 0;
+	margin-bottom: 1.3em;
+   
+
+}
+
+/* Individual pill */
+
+.tech-pill {
+display: inline-flex;
+
+   
+align-items: center;
+
+gap: 5px;
+
+padding: 5px 9px;
+
+background: #f5f5f5;
+
+border: 1px solid #e5e5e5;
+
+border-radius: 6px;
+
+color: #666a70;
+
+font-size: 0.68em;
+
+font-weight: 600;
+
+line-height: 1;
+
+letter-spacing: 0.025em;
+
+white-space: nowrap;
+
+transition:
+	background-color 0.2s ease,
+	border-color 0.2s ease,
+	color 0.2s ease,
+	transform 0.2s ease;
+   
+
+}
+
+/* Pill icon */
+
+.tech-pill i {
+font-size: 1em;
+
+   
+color: #85898e;
+
+transition: color 0.2s ease;
+   
+
+}
+
+/* Pill hover */
+
+.tech-pill:hover {
+background: #fff5f4;
+
+   
+border-color: rgba(233, 119, 112, 0.45);
+
+color: #d96660;
+
+transform: translateY(-2px);
+   
+
+}
+
+.tech-pill:hover i {
+color: #e97770;
+}
+
+/* ---------------------------------------------------------
+PROJECT FOOTER
+--------------------------------------------------------- */
+
+.project-footer {
+
+
+margin-top: auto;
+
+padding-top: 1em;
+border-top: 1px solid #eeeeee;
+   
+
+}
+
+/* GitHub link */
+
+.project-link {
+display: flex;
+
+   
+align-items: center;
+
+width: 100%;
+
+color: #5c6066;
+
+text-decoration: none;
+
+font-size: 0.72em;
+
+font-weight: 700;
+
+letter-spacing: 0.08em;
+
+text-transform: uppercase;
+
+transition: color 0.25s ease;
+   
+
+}
+
+.project-link > i:first-child {
+margin-right: 7px;
+
+   
+font-size: 1.2em;
+   
+
+}
+
+/* Arrow */
+
+.project-arrow {
+margin-left: auto;
+
+   
+font-size: 0.9em;
+
+transition: transform 0.25s ease;
+   
+
+}
+
+/* Footer link hover */
+
+.project-link:hover {
+color: #e97770;
+}
+
+.project-link:hover .project-arrow {
+transform: translateX(4px);
+}
+
+/* ---------------------------------------------------------
+CARD ENTRANCE ANIMATION
+--------------------------------------------------------- */
+
+@keyframes projectFadeUp {
+
+   
+from {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+   
+
+}
+
+.project-column {
+opacity: 0;
+
+   
+animation: projectFadeUp 0.65s ease forwards;
+   
+
+}
+
+/* Stagger cards */
+
+.project-column:nth-child(1) {
+animation-delay: 0.08s;
+}
+
+.project-column:nth-child(2) {
+animation-delay: 0.18s;
+}
+
+.project-column:nth-child(3) {
+animation-delay: 0.28s;
+}
+
+/* ---------------------------------------------------------
+RESPONSIVE - TABLET
+--------------------------------------------------------- */
+
+@media screen and (max-width: 980px) {
+
+   
+.project-column {
+	max-width: 650px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.project-image {
+	height: 300px;
+}
+
+
+.project-content {
+	padding: 1.6em;
+}
+
+
+.project-title {
+	font-size: 1.2em !important;
+}
+   
+
+}
+
+/* ---------------------------------------------------------
+RESPONSIVE - MOBILE
+--------------------------------------------------------- */
+
+@media screen and (max-width: 736px) {
+
+   
+.projects-section {
+	padding-top: 4.5em;
+}
+
+
+.project-card {
+	border-radius: 8px;
+}
+
+
+.project-card:hover {
+	transform: translateY(-4px);
+}
+
+
+.project-image {
+	height: 210px;
+}
+
+
+.project-content {
+	padding: 1.25em;
+}
+
+
+.project-meta {
+	margin-bottom: 0.6em;
+}
+
+
+.project-title {
+	font-size: 1.08em !important;
+
+	margin-bottom: 0.5em !important;
+}
+
+
+.project-description {
+	font-size: 0.84em;
+
+	margin-bottom: 1em;
+	line-height: 1.2px;
+}
+
+
+.project-tech {
+	gap: 6px;
+
+	margin-bottom: 1.1em;
+}
+
+
+.tech-pill {
+	font-size: 0.65em;
+
+	padding: 5px 8px;
+}
+   
+
+}
+
+/* ---------------------------------------------------------
+ACCESSIBILITY
+Disable animation for users who prefer reduced motion
+--------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+   
+.project-column {
+	animation: none;
+	opacity: 1;
+}
+
+
+.project-card,
+.project-image img,
+.project-image-overlay,
+.project-image-overlay span,
+.tech-pill,
+.project-arrow {
+	transition: none;
+}
+   
+
+}
+
+.project-grid {
+	justify-content: center;
+	gap: 7px;
+	margin-top: 10px;
+}
+
+.project-column {
+	flex: 0 0 30%;
+	max-width: 30%;
+	padding: 0 !important;
+}

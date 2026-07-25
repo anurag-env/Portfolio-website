@@ -1,80 +1,413 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
 		<title>Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header" class="wrapper" style="background: none; z-index: 0;">
+    
+	<!-- Main Portfolio CSS -->
+	<link rel="stylesheet" href="assets/css/main.css" />
 
-					<!-- Image acting as background -->
-					<img src="images/10.jpg" alt="Header Background Image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
+	<!-- Projects Page CSS -->
+	<link rel="stylesheet" href="assets/css/projects.css" />
+</head>
 
-						<div id="logo">
-							<h1><a href="index.html">Projects</a></h1>
-							<p></p>
-						</div>
+<body class="homepage is-preload">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">About Me</a></li>
-								<li><a href="resume.html">My Resume</a></li>
-								<li class="current"><a href="projects.html">Projects</a></li>
-								<li><a href="research.html">Research</a></li>
-								<li><a href="blogs.html">Blogs</a></li>
-								<li><a href="contacts.html">Contact info</a></li>
-							</ul>
-						</nav>
+	<div id="page-wrapper">
 
-				</section>
+		<!-- Header -->
+		<section id="header" class="wrapper" style="background: none; z-index: 0;">
 
-			<!-- Projects Content -->
-				<section id="highlights" class="wrapper style3">
-					<div class="title">Featured Projects</div>
-					<div class="container">
-						
-						<!-- Row 1 -->
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
-								<section class="highlight" style="cursor: pointer; background: #fff; padding: 2em 1em; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';" onclick="window.location.href='https://github.com/';">
-									<a href="https://github.com/" class="image featured"><img src="images/Research Writter.jpg" alt="" style="border-radius: 4px;" /></a>
-									<h3><a href="https://github.com/">Research Paper Writer</a></h3>
-									<p>An LLM Pipeline that writes complete Research Papers on its own.</p>
-								</section>
+			<!-- Header Background -->
+			<img
+				src="images/10.jpg"
+				alt="Header Background"
+				style="
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					z-index: -1;
+				"
+			/>
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1>
+					<a href="index.html">Projects</a>
+				</h1>
+			</div>
+
+			<!-- Navigation -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">About Me</a></li>
+					<li><a href="resume.html">My Resume</a></li>
+					<li class="current"><a href="projects.html">Projects</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="blogs.html">Blogs</a></li>
+					<li><a href="contacts.html">Contact info</a></li>
+				</ul>
+			</nav>
+
+		</section>
+
+
+		<!-- Projects -->
+		<section id="highlights" class="wrapper style3 projects-section">
+
+			<div class="title">Featured Projects</div>
+
+			<div class="container">
+
+				<!-- Projects Grid -->
+				<div class="row aln-center project-grid">
+
+
+					<!-- ==================================================
+						 PROJECT 1
+					================================================== -->
+					<div class="col-4 col-12-medium project-column">
+
+						<article class="project-card">
+
+							<!-- Project Image -->
+							<a href="https://github.com/"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   class="project-image">
+
+								<img
+									src="images/Research Writter.jpg"
+									alt="Research Paper Writer"
+								/>
+
+								<div class="project-image-overlay">
+									<span>
+										<i class="fab fa-github"></i>
+										View Project
+									</span>
+								</div>
+
+							</a>
+
+
+							<!-- Project Content -->
+							<div class="project-content">
+
+								<!-- Project Number / Type -->
+								<div class="project-meta">
+									<span class="project-number">01</span>
+									<span class="project-type">Generative AI</span>
+								</div>
+
+
+								<!-- Project Title -->
+								<h3 class="project-title">
+									<a
+										href="https://github.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Research Paper Writer
+									</a>
+								</h3>
+
+
+								<!-- Description -->
+								<p class="project-description">
+									An LLM pipeline that autonomously generates
+									structured research papers from a given topic.
+								</p>
+
+
+								<!-- Tech Stack -->
+								<div class="project-tech">
+
+									<span class="tech-pill">
+										<i class="fab fa-python"></i>
+										Python
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-brain"></i>
+										LLM
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-robot"></i>
+										AI Agents
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-file-alt"></i>
+										DOCX
+									</span>
+
+								</div>
+
+
+								<!-- Project Footer -->
+								<!-- <div class="project-footer">
+
+									<a
+										href="https://github.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="project-link"
+									>
+										<i class="fab fa-github"></i>
+										GitHub
+
+										<i class="fas fa-arrow-right project-arrow"></i>
+									</a>
+
+								</div> -->
+
 							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight" style="cursor: pointer; background: #fff; padding: 2em 1em; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';" onclick="window.location.href='https://github.com/';">
-									<a href="https://github.com/" class="image featured"><img src="images/reseach analyser.jpg" alt="" style="border-radius: 4px;" /></a>
-									<h3><a href="https://github.com/">Research Paper Analyser</a></h3>
-									<p>A RAG based offline model that analyse the Research Paper and answer the user questions.</p>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight" style="cursor: pointer; background: #fff; padding: 2em 1em; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';" onclick="window.location.href='https://github.com/';">
-									<a href="https://github.com/" class="image featured"><img src="images/Iris.jpg" alt="" style="border-radius: 4px;" /></a>
-									<h3><a href="https://github.com/">Iris Flower Classification</a></h3>
-									<p>A KNN based model that classifies the Flower into Setosa, Versicolor & Virginica.</p>
-								</section>
-							</div>
-						</div>
+
+						</article>
 
 					</div>
-				</section>
 
-		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+
+					<!-- ==================================================
+						 PROJECT 2
+					================================================== -->
+					<div class="col-4 col-12-medium project-column">
+
+						<article class="project-card">
+
+							<!-- Project Image -->
+							<a href="https://github.com/"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   class="project-image">
+
+								<img
+									src="images/reseach analyser.jpg"
+									alt="Research Paper Analyser"
+								/>
+
+								<div class="project-image-overlay">
+									<span>
+										<i class="fab fa-github"></i>
+										View Project
+									</span>
+								</div>
+
+							</a>
+
+
+							<!-- Project Content -->
+							<div class="project-content">
+
+								<div class="project-meta">
+									<span class="project-number">02</span>
+									<span class="project-type">RAG System</span>
+								</div>
+
+
+								<!-- Project Title -->
+								<h3 class="project-title">
+									<a
+										href="https://github.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Research Paper Analyser
+									</a>
+								</h3>
+
+
+								<!-- Description -->
+								<p class="project-description">
+									A RAG-based offline system that analyses research
+									papers and answers questions using their content.
+								</p>
+
+
+								<!-- Tech Stack -->
+								<div class="project-tech">
+
+									<span class="tech-pill">
+										<i class="fab fa-python"></i>
+										Python
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-database"></i>
+										RAG
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-brain"></i>
+										LLM
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-vector-square"></i>
+										Embeddings
+									</span>
+
+								</div>
+
+
+								<!-- Project Footer -->
+								<!-- <div class="project-footer">
+
+									<a
+										href="https://github.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="project-link"
+									>
+										<i class="fab fa-github"></i>
+										GitHub
+
+										<i class="fas fa-arrow-right project-arrow"></i>
+									</a>
+
+								</div> -->
+
+							</div>
+
+						</article>
+
+					</div>
+
+
+
+					<!-- ==================================================
+						 PROJECT 3
+					================================================== -->
+					<div class="col-4 col-12-medium project-column">
+
+						<article class="project-card">
+
+							<!-- Project Image -->
+							<a href="https://github.com/"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   class="project-image">
+
+								<img
+									src="images/Iris.jpg"
+									alt="Iris Flower Classification"
+								/>
+
+								<div class="project-image-overlay">
+									<span>
+										<i class="fab fa-github"></i>
+										View Project
+									</span>
+								</div>
+
+							</a>
+
+
+							<!-- Project Content -->
+							<div class="project-content">
+
+								<div class="project-meta">
+									<span class="project-number">03</span>
+									<span class="project-type">Machine Learning</span>
+								</div>
+
+
+								<!-- Project Title -->
+								<h3 class="project-title">
+									<a
+										href="https://github.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Iris Flower Classification
+									</a>
+								</h3>
+
+
+								<!-- Description -->
+								<p class="project-description">
+									A KNN-based machine learning model that classifies
+									Iris flowers into Setosa, Versicolor and Virginica.
+								</p>
+
+
+								<!-- Tech Stack -->
+								<div class="project-tech">
+
+									<span class="tech-pill">
+										<i class="fab fa-python"></i>
+										Python
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-project-diagram"></i>
+										KNN
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-calculator"></i>
+										NumPy
+									</span>
+
+									<span class="tech-pill">
+										<i class="fas fa-chart-line"></i>
+										ML
+									</span>
+
+								</div>
+
+
+								<!-- Project Footer -->
+								<!-- <div class="project-footer">
+
+									<a
+										href="https://github.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="project-link"
+									>
+										<i class="fab fa-github"></i>
+										GitHub
+
+										<i class="fas fa-arrow-right project-arrow"></i>
+									</a>
+
+								</div> -->
+
+							</div>
+
+						</article>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>	
+
+</body>
+    
+
 </html>
