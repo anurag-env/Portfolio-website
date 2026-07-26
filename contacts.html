@@ -168,73 +168,137 @@
 		</section>
 
 		<!-- Footer -->
-		<section id="footer" class="wrapper">
-			<div class="title">Further Contacts</div>
-			<div class="container">				
-				
-				<!-- Social Icons Row -->
-				<div style="text-align: center; margin-bottom: 2rem;">
-					<ul style="list-style: none; padding-top:200px; padding-left: 1000px; margin: 0; display: flex; justify-content: center; gap: 20px;">
-						<li>
-							<a href="https://x.com/polebird_04" target="_blank" style="border-bottom: none; display: inline-block;">
-								<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
-							</a>
-						</li>
-						<li>
-							<a href="https://whatsapp.com" target="_blank" style="border-bottom: none; display: inline-block;">
-								<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
-							</a>
-						</li>
-						<li>
-							<a href="https://instagram.com/polebird_04" target="_blank" style="border-bottom: none; display: inline-block;">
-								<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
-							</a>
-						</li>
-						<li>
-							<a href="https://telegram.org" target="_blank" style="border-bottom: none; display: inline-block;">
-								<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" style="width: 32px; height: 32px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" />
-							</a>
-						</li>
-					</ul>
-									<!-- <hr style="border: 0; border-top: 1px solid rgba(128, 128, 128, 0.2); margin: 2rem 0; margin-left: 500px;" /> -->
+<section id="footer" class="wrapper contact-footer">
+	<div class="container">
 
-					<p style="margin-left:1000px; margin-top: 10px; ">Thanks for Visiting my portfolio!</p>  
+		<!-- Feedback -->
+		<div class="footer-feedback">
+			<span class="footer-label">FEEDBACK</span>
+
+			<h2>Suggest an improvement.</h2>
+
+			<p>
+				Hello, please submit your feedback in this box, whatever you like, and specially what can be improved more.
+			</p>
+
+			<form action="https://formsubmit.co/anuragsingh.eu@gmail.com" method="POST">
+
+				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_subject" value="New Suggestion on Portfolio!">
+
+				<div class="feedback-box">
+					<textarea
+						name="message"
+						id="contact-message"
+						placeholder="Type your suggestion here..."
+						rows="4"
+						required
+						oninput="
+							let words = this.value.trim().split(/\s+/);
+							if (words.length > 100) {
+								this.value = words.slice(0, 100).join(' ') + ' ';
+							}
+						"
+					></textarea>
+
+					<button type="submit" class="feedback-submit">
+						Send feedback
+						<span>→</span>
+					</button>
 				</div>
 
-			<div class="container" style="margin-top: -15rem; margin-left: -200px; position: relative;">
-			<h3 style="margin-bottom: 0.5rem; margin-top: 1rem;">Suggest for any further improvements...</h3>
-			<p style="margin-bottom: 2rem; margin-top:0 ;">Hello, please submit your feedback in this box, whatever you like, and specially what can be improved more.</p>
-			<div class="row">
-				<div class="col-8 col-12-medium" style="margin: 0 auto; margin-left: -1px;">
-					<form action="https://formsubmit.co/anuragsingh.eu@gmail.com" method="POST">
-						<!-- Hidden fields to avoid spam/captcha and configure FormSubmit -->
-						<input type="hidden" name="_captcha" value="false">
-						<input type="hidden" name="_subject" value="New Suggestion on Portfolio!">
-						
-						<div class="row gtr-50">
-							<div class="col-12">
-								<textarea name="message" id="contact-message" placeholder="Type your suggestions here... (Max 100 words)" rows="4" style="resize: none;" oninput="let words = this.value.trim().split(/\s+/); if(words.length > 100) { this.value = words.slice(0, 100).join(' ') + ' '; }" required></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions" style="justify-content: center; text-align: center; margin-top: 10px; margin-left: 590px;">
-									<li><input type="submit" class="button style1" value="Send Message" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-				
-		     
-				<div id="copyright" style="margin-bottom: -8rem; margin-top: -8rem; margin-left: 1000px; margin-right: -400px;">
-					<ul>
-						<li>&copy;2026 anurag singh</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+			</form>
+		</div>
+
+
+		<!-- Footer Bottom -->
+		<div class="footer-bottom">
+
+    <!-- Thanks -->
+    <p class="footer-thanks">
+        Thanks for visiting my portfolio.
+    </p>
+
+    <!-- Bottom Row -->
+    <div class="footer-meta-row">
+
+        <!-- Left -->
+        <span class="footer-copyright">
+            &copy; 2026 Anurag Singh
+        </span>
+
+        <!-- Center -->
+        <div class="footer-socials">
+
+            <a href="https://x.com/polebird_04"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="X">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="https://instagram.com/polebird_04"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://whatsapp.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://telegram.org"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Telegram">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+
+        </div>
+
+        <!-- Right -->
+        <span class="footer-updated">
+            <span class="footer-ping"></span>
+            Last updated
+            <span id="last-updated">Loading...</span>
+        </span>
+
+    </div>
+
+</div>
 
 	</div>
+</section>
+
+	</div>
+	<script>
+    fetch("https://api.github.com/repos/anurag-env/Portfolio-website/commits?per_page=1")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("GitHub API request failed");
+            }
+
+            return response.json();
+        })
+        .then(data => {
+            const date = new Date(data[0].commit.committer.date);
+
+            document.getElementById("last-updated").textContent =
+                date.toLocaleDateString("en-IN", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                });
+        })
+        .catch(() => {
+            document.getElementById("last-updated").textContent =
+                "Unavailable";
+        });
+</script>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>

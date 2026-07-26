@@ -51,7 +51,7 @@ transition:
 /* Card hover */
 
 .project-card:hover {
-transform: translateY(-3px);
+transform: translateY(-5px);
 
    
 border-color: #dddddd;

@@ -1,0 +1,322 @@
+/* =========================================================
+   INDEX PAGE — HOBBIES
+   Scoped specifically to the homepage.
+   ========================================================= */
+
+.home-hobbies {
+    margin-top: 40px;
+    background: #f4f7f5;
+    border: 1px solid #ebe4d8;
+    border-radius: 14px;
+    padding: 24px 28px;
+    text-align: left;
+}
+
+.home-hobbies h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #484d55;
+    letter-spacing: 0.01em;
+}
+
+
+/* Hobby boxes container */
+
+.home-hobby-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+/* Each individual hobby box */
+
+.home-hobby {
+    position: relative;
+
+    width: 82px;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border-radius: 10px;
+
+    cursor: default;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Minimal hover */
+
+.home-hobby:hover,
+.home-hobby:focus-visible {
+    transform: translateY(-3px);
+
+    background: #ffffff;
+    border-color: #e2ddd4;
+
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+
+    outline: none;
+}
+
+
+/* Font Awesome icons */
+
+.home-hobby i {
+    font-size: 36px;
+    color: #484d55;
+
+    transition: transform 0.2s ease;
+}
+
+.home-hobby:hover i {
+    transform: scale(1.08);
+}
+
+
+/* SVG icons */
+
+.home-hobby img {
+    display: block;
+    max-width: 52px;
+    max-height: 48px;
+
+    transition: transform 0.2s ease;
+}
+
+.home-hobby:hover img,
+.home-hobby:focus-visible img {
+    transform: scale(1.08);
+}
+
+
+/* Font Awesome icons */
+
+.home-hobby i {
+    font-size: 42px;
+    color: inherit;
+
+    transition: transform 0.2s ease;
+}
+
+.home-hobby:hover i,
+.home-hobby:focus-visible i {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   TOOLTIP
+   ========================================================= */
+
+.home-hobby::after {
+    content: attr(data-tooltip);
+
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+
+    transform: translateX(-50%) translateY(5px);
+
+    width: max-content;
+    max-width: 220px;
+
+    padding: 7px 11px;
+
+    background: #282b34;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    z-index: 50;
+
+    transition:
+        opacity 0.18s ease,
+        transform 0.18s ease,
+        visibility 0.18s ease;
+}
+
+
+.home-hobby:hover::after,
+.home-hobby:focus-visible::after {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* Small tooltip arrow */
+
+.home-hobby::before {
+    content: "";
+
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 6px solid transparent;
+    border-top-color: #282b34;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.18s ease;
+}
+
+
+.home-hobby:hover::before,
+.home-hobby:focus-visible::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 736px) {
+
+    .home-hobbies {
+        margin-top: 30px;
+        padding-top: 22px;
+    }
+
+    .home-hobbies h3 {
+        text-align: center;
+        font-size: 1.05em;
+    }
+
+    .home-hobby-list {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .home-hobby {
+        width: 64px;
+        height: 62px;
+    }
+
+    .home-hobby img {
+        max-width: 42px;
+        max-height: 40px;
+    }
+
+    .home-hobby i {
+        font-size: 36px;
+    }
+
+}
+
+/* ================================
+   Minimal Footer
+   ================================ */
+
+.minimal-footer {
+   background: #252B32;
+    color: rgba(255, 255, 255, 0.55);
+
+    padding: 28px 5vw;
+}
+
+.minimal-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Name */
+
+.footer-name {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* Last updated */
+
+.footer-updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 0.78rem;
+
+    cursor: default;
+}
+
+
+/* Ping dot */
+
+.footer-ping {
+    width: 6px;
+    height: 6px;
+
+    margin-right: 2px;
+
+    background: #22c55e;
+    border-radius: 50%;
+
+    box-shadow: 0 0 6px rgba(34, 197, 94, 0.45);
+
+    animation: footerPing 2s infinite;
+}
+
+
+/* Green ping on hover */
+
+
+@keyframes footerPing {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 5px rgba(34, 197, 94, 0);
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+    .minimal-footer {
+        padding: 24px 6vw;
+    }
+
+    .minimal-footer-inner {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
