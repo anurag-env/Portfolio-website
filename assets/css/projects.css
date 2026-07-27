@@ -549,7 +549,7 @@ RESPONSIVE - MOBILE
 
 
 .project-image {
-	height: 210px;
+	height: 310px;
 }
 
 
@@ -567,14 +567,16 @@ RESPONSIVE - MOBILE
 	font-size: 1.08em !important;
 
 	margin-bottom: 0.5em !important;
+
+	color: coral !important;
 }
 
 
 .project-description {
-	font-size: 0.84em;
-
-	margin-bottom: 1em;
-	line-height: 1.2px;
+    font-size: 0.84em;
+    margin: 0 0 1em 0;
+    line-height: 1.5;
+    min-height: 0;
 }
 
 
@@ -621,13 +623,47 @@ Disable animation for users who prefer reduced motion
 }
 
 .project-grid {
-	justify-content: center;
-	gap: 7px;
-	margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 10px;
 }
 
 .project-column {
-	flex: 0 0 30%;
-	max-width: 30%;
-	padding: 0 !important;
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 0 !important;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 980px) {
+
+    .project-column {
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+}
+
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+
+    .project-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+		margin-left: 30px;
+		margin-bottom: 15px;
+    }
+
+    .project-card {
+        width: 92%;
+    }
+
 }

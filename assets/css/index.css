@@ -164,6 +164,14 @@
     transform: translateX(-50%) translateY(0);
 }
 
+.about-head {
+    font-size: x-large;
+    font-weight: 770; 
+    font-style:bold; 
+    text-align:left;
+    margin-left:1px ;
+}
+
 
 /* Small tooltip arrow */
 
@@ -318,5 +326,58 @@
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+    
+}
+
+/* wave hand  */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+/* underline css */
+.underline-text {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    
+}
+
+.underline-text:hover{
+    color: coral;
+
+}
+
+/* Wider About Me text on mobile */
+@media screen and (max-width: 736px) {
+
+    #intro .container {
+        width: calc(100% - 16px);
+    }
+
+    #intro .about-content {
+        width: 100%;
+    }
+
+    #intro p.style2 {
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
